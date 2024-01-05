@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information Form</title>
+    <style>
+        body {
+            background-color: rgb(206, 132, 241);
+            font-family: Arial, sans-serif;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: rgb(194, 251, 209);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #00ff99;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Information Form</h1>
+    <div>
+        <form action="http://www2.scs.torontomu.ca/~p16patel/cgi-bin/lab07b.cgi" method="post"
+            enctype="multipart/form-data">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="First Last" required>
+
+            <label for="streetname">Street</label>
+            <input type="text" id="streetname" name="streetname" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="postal">Postal Code</label>
+            <input type="text" id="postal" name="postal" placeholder="A1A 1A1" Prequired>
+
+            <label for="province">Province</label>
+            <select id="province" name="province" placeholder="Select-Province">
+                <option value="Alberta">Alberta</option>
+                <option value="Saskatchewan">Saskatchewan</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Quebec">Quebec</option>
+                <option value="PEI">PEI</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Northwest Terriroties">Northwest</option>
+                <option value="Newfoundland and Labrador">NFL</option>edw
+            </select>
+
+            <label for="phone">Phone #</label>
+            <input type="text" id="phone" name="phone" placeholder="10 digits" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="johndoe@email.com" required>
+
+            <label for="photo">Photograph</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
